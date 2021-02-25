@@ -115,6 +115,17 @@ class SettingController extends Controller
                         
                 }
 
+                $favicon = $request->favicon;
+                 if($favicon){
+                        $uniqname = uniqid();
+                        $ext = strtolower($favicon->getClientOriginalExtension());
+                        $filepath = 'public/images/';
+                        $imagename = $filepath.$uniqname.'.'.$ext;
+                        @unlink($setting->favicon);
+                        $image->move($filepath,$imagename);
+                        $setting->favicon  = $imagename;  
+                }
+
  
 
 

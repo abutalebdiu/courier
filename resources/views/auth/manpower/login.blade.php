@@ -3,12 +3,12 @@
 <head>
         
         <meta charset="utf-8" />
-        <title>Log In - User</title>
+        <title>Delivery Man Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Courier Management Software" name="description" />
         <meta content="Themesbrand" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ asset($websetting->favicon) }}">
           <!-- Bootstrap Css -->
         <link href="{{asset('links/backend/01')}}/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
            <!-- Icons Css -->
