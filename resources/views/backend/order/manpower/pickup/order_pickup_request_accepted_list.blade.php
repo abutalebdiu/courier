@@ -1,7 +1,5 @@
 @extends('backend.manpower.layouts.master')
-@push('title')
-    Accepted Order Pickup Request List
-@endpush
+@section('title','Accepted Order Pickup Request List')
 @section('content')
 	<!-- start page title -->
     @if (session()->has('error'))
@@ -34,22 +32,7 @@
     @endif
 
 
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-flex align-items-center justify-content-between">
-                <h4 class="mb-0">All Accepted Order Pickup Request</h4>
-
-                <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Manpower</a></li>
-                        <li class="breadcrumb-item active">Accepted Order Pickup Request</li>
-                    </ol>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- end page title -->
+   
 
  
     <div class="row">
@@ -64,14 +47,14 @@
             </h4>
                     
                     <hr>
-                    <table id="datatable-buttons" class="table dt-responsive nowrap w-100">
+                    <table id="datatable" class="table dt-responsive nowrap w-100">
                         <thead>
                             <tr>
                                 <th>Sl.</th>
                                 <th>Order ID</th>
-                                <th>Customer Name<br/>Customer Phone</th>
+                                <th>Customer   <br> Name , Phone</th>
                                 <th>Merchant Shop</th>
-                                <th>Pickup Address <br/>Pickup Phone</th>
+                                <th>Pickup  <br/> Address , Phone</th>
                                 <th>Created at</th>
                                 <th>Action</th>
                             </tr>

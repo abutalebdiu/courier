@@ -1,7 +1,5 @@
 @extends('backend.manpower.layouts.master')
-@push('title')
-    Pending Order Pickup Request List
-@endpush
+@section('title','Pending Order Pickup Request List')
 @section('content')
 	<!-- start page title -->
     @if (session()->has('error'))
@@ -33,45 +31,23 @@
     </div>
     @endif
 
-
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box d-flex align-items-center justify-content-between">
-                <h4 class="mb-0">All Pending Order Pickup Request</h4>
-
-                <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Manpower</a></li>
-                        <li class="breadcrumb-item active">Pending Order Pickup Request</li>
-                    </ol>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- end page title -->
-
+ 
  
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Pending Order Pickup Request List 
-                    {{--     <a href="" class="float-right btn btn-primary btn-sm">
-                            <i class="icon nav-icon" data-feather="plus"></i>
-                            <span class="menu-item" key="t-plus">Create Admin</span>
-                        </a> --}}
-            </h4>
+                    <h4 class="card-title">Pending Order Pickup Request List   </h4>
                     
                     <hr>
-                    <table id="datatable-buttons" class="table dt-responsive nowrap w-100">
+                    <table id="datatable" class="table dt-responsive nowrap w-100">
                         <thead>
                             <tr>
                                 <th>Sl.</th>
                                 <th>Order ID</th>
-                                <th>Customer Name<br/>Customer Phone</th>
+                                <th>Customer   <br> Name , Phone</th>
                                 <th>Merchant Shop</th>
-                                <th>Pickup Address <br/>Pickup Phone</th>
+                                <th>Pickup  <br/> Address , Phone</th>
                                 <th>Created at</th>
                                 <th>Action</th>
                             </tr>
